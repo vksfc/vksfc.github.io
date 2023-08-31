@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <link rel="shortcut icon" href="/file/favicon.ico">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/Navigation_bar/Navigation_bar1/Navigation_bar1.css">
+        <link rel="stylesheet" type="text/css" href="/yongyin/yongyin1.css">
+        <script src="/yongyin/yongyin1.js"></script>
+        <title>Pine hydrogen-我的世界java</title>
+    </head>
+    <body>
+        <div class="tabs">
+            <div class="tab">
+                <input type="radio" id="tab1" name="group-1" checked>
+                <label for="tab1">首页</label>
+                <div class="content">
+                    <div style="margin-top:10px">
+                        <button type="button" class="yongyin" onclick="home()" style="width:100px; height:30px;">Pine hydrogen主页</button>
+                        <button type="button" class="yongyin" onclick="javascript:location.reload()" style="width:100px; height:30px;">刷新</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab2" name="group-1">
+                <label for="tab2">服务器核心库</label>
+                <div class="content">
+                    <h1>原版核心搜索</h1>
+                    由于第三方问题，无法提供下载服务
+                </div>
+            </div>
+            <div class="tab">
+                <input type="radio" id="tab3" name="group-1">
+                <label for="tab3">forge下载</label>
+                <div class="content">
+                    <h1><a href="/mc/java/Forge_installation_tutorial.html">安装教程</a></h1>
+                    <h1><a href="https://files.minecraftforge.net/net/minecraftforge/forge/">forge官方下载页面(广)</a></h1>
+                    <h1>-----搜索版本号下载-----</h1>
+                    <link rel="stylesheet" type="text/css" href="/search/search1.css">
+                    <script>
+                        function search1() {
+                            var searchInput = document.getElementById("searchInput").value;
+                        
+                            if ( searchInput == "1.20.1") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.1.43/forge-1.20.1-47.1.43-installer.jar"
+                            } if ( searchInput == "1.20") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20-46.0.14/forge-1.20-46.0.14-installer.jar"
+                            } if ( searchInput == "1.19.4") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.4-45.1.16/forge-1.19.4-45.1.16-installer.jar"
+                            } if ( searchInput == "1.19.3") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.3-44.1.23/forge-1.19.3-44.1.23-installer.jar"
+                            } if ( searchInput == "1.19.2") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.2-43.2.21/forge-1.19.2-43.2.21-installer.jar"
+                            } if ( searchInput == "1.19.1") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.1-42.0.9/forge-1.19.1-42.0.9-installer.jar"
+                            } if ( searchInput == "1.19") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19-41.1.0/forge-1.19-41.1.0-installer.jar"
+                            } if ( searchInput == "1.18.2") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.2.10/forge-1.18.2-40.2.10-installer.jar"
+                            } if ( searchInput == "1.18.1") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.1-39.1.2/forge-1.18.1-39.1.2-installer.jar"
+                            } if ( searchInput == "1.18") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18-38.0.17/forge-1.18-38.0.17-installer.jar"
+                            } if ( searchInput == "1.17.1") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.17.1-37.1.1/forge-1.17.1-37.1.1-installer.jar"
+                            } if ( searchInput == "1.16.5") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.2.39/forge-1.16.5-36.2.39-installer.jar"
+                            } if ( searchInput == "1.16.4") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.4-35.1.37/forge-1.16.4-35.1.37-installer.jar"
+                            } if ( searchInput == "1.16.3") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.3-34.1.42/forge-1.16.3-34.1.42-installer.jar"
+                            } if ( searchInput == "1.16.2") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.2-33.0.61/forge-1.16.2-33.0.61-installer.jar"
+                            } if ( searchInput == "1.16.1") {
+                                window.location.href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.1-32.0.108/forge-1.16.1-32.0.108-installer.jar"
+                            }
+                        }
+                    </script>
+                        <form target="_blank" method="get">
+                            <input type="text" class="text" id="searchInput" autocomplete="off" placeholder="搜索...">
+                            <button onclick="search1()" class="search" >搜索</button>
+                        </form>
+                        <p>最高版本号：1.20.1</p>
+                        <p>最低版本号：1.16.1</p>
+                    <h1>-----手动选择版本下载-----</h1>
+                    <h3>-----1.20-----</h3>
+                        <h5>1.20.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.1.43/forge-1.20.1-47.1.43-installer.jar">forge官方v47.1.43</a>
+                        <h5>1.20</h5>
+                        <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.20-46.0.14/forge-1.20-46.0.14-installer.jar">forge官方v46.0.14</a>
+                    <h3>-----1.19-----</h3>
+                        <h5>1.19.4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.4-45.1.16/forge-1.19.4-45.1.16-installer.jar">forge官方v45.1.16</a>
+                        <h5>1.19.3</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.3-44.1.23/forge-1.19.3-44.1.23-installer.jar">forge官方v44.1.23</a>
+                        <h5>1.19.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.2-43.2.21/forge-1.19.2-43.2.21-installer.jar">forge官方v43.2.21</a>
+                        <h5>1.19.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19.1-42.0.9/forge-1.19.1-42.0.9-installer.jar">forge官方v42.0.9</a>
+                        <h5>1.19</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.19-41.1.0/forge-1.19-41.1.0-installer.jar">forge官方v41.1.0</a>
+                    <h3>-----1.18-----</h3>
+                        <h5>1.18.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.2-40.2.10/forge-1.18.2-40.2.10-installer.jar">forge官方v10.2.10</a>
+                        <h5>1.18.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18.1-39.1.2/forge-1.18.1-39.1.2-installer.jar">forge官方v39.1.2</a>
+                        <h5>1.18</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.18-38.0.17/forge-1.18-38.0.17-installer.jar">forge官方v38.0.17</a>
+                    <h3>-----1.17-----</h3>
+                        <h5>1.17.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.17.1-37.1.1/forge-1.17.1-37.1.1-installer.jar">forge官方v37.1.1</a>
+                    <h3>-----1.16-----</h3>
+                        <h5>1.16.5</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.5-36.2.39/forge-1.16.5-36.2.39-installer.jar">forge官方v36.2.39</a>
+                        <h5>1.16.4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.4-35.1.37/forge-1.16.4-35.1.37-installer.jar">forge官方v35.1.37</a>
+                        <h5>1.16.3</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.3-34.1.42/forge-1.16.3-34.1.42-installer.jar">forge官方v34.1.42</a>
+                        <h5>1.16.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.2-33.0.61/forge-1.16.2-33.0.61-installer.jar">forge官方v33.0.61</a>
+                        <h5>1.16.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.16.1-32.0.108/forge-1.16.1-32.0.108-installer.jar">forge官方v32.0.108</a>
+                    <h3>-----1.15-----</h3>
+                        <h5>1.15.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.15.2-31.2.57/forge-1.15.2-31.2.57-installer.jar">forge官方v31.2.57</a>
+                        <h5>1.15.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.15.1-30.0.51/forge-1.15.1-30.0.51-installer.jar">forge官方v30.0.51</a>
+                        <h5>1.15</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.15-29.0.4/forge-1.15-29.0.4-installer.jar">forge官方v29.0.4</a>
+                    <h3>-----1.14-----</h3>
+                        <h5>1.14.4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.14.4-28.2.26/forge-1.14.4-28.2.26-installer.jar">forge官方v28.2.26</a>
+                        <h5>1.14.3</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.14.3-27.0.60/forge-1.14.3-27.0.60-installer.jar">forge官方v27.0.60</a>
+                        <h5>1.14.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.14.2-26.0.63/forge-1.14.2-26.0.63-installer.jar">forge官方v26.0.63</a>
+                    <h3>-----1.13-----</h3>
+                        <h5>1.13.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.13.2-25.0.223/forge-1.13.2-25.0.223-installer.jar">forge官网v25.0.223</a>
+                    <h3>-----1.12-----</h3>
+                        <h5>1.12.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.2-14.23.5.2860/forge-1.12.2-14.23.5.2860-installer.jar">forge官网v14.23.5.2860</a>
+                        <h5>1.12.1</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.12.1-14.22.1.2485/forge-1.12.1-14.22.1.2485-installer.jar">forge官网v14.22.1.2485</a>
+                        <h5>1.12</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.12-14.21.1.2443/forge-1.12-14.21.1.2443-installer.jar">forge官网v14.21.1.2443</a>
+                    <h3>-----1.11-----</h3>
+                        <h5>1.11.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.11.2-13.20.1.2588/forge-1.11.2-13.20.1.2588-installer.jar">forge官网v13.20.1.2588</a>
+                        <h5>1.11</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.11-13.19.1.2199/forge-1.11-13.19.1.2199-installer.jar">forge官网v13.19.1.2199</a>
+                    <h3>-----1.10-----</h3>
+                        <h5>1.10.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.10.2-12.18.3.2511/forge-1.10.2-12.18.3.2511-installer.jar">forge官网v12.18.3.2511</a>
+                        <h5>1.10</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.10-12.18.0.2000-1.10.0/forge-1.10-12.18.0.2000-1.10.0-installer.jar">forge官网v12.18.0.2000</a>
+                    <h3>-----1.9-----</h3>
+                        <h5>1.9.4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.9.4-12.17.0.2317-1.9.4/forge-1.9.4-12.17.0.2317-1.9.4-installer.jar">forge官网v12.17.0.2317</a>
+                        <h5>1.9</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.9-12.16.1.1938-1.9.0/forge-1.9-12.16.1.1938-1.9.0-installer.jar">forge官网v12.16.1.1938</a>
+                    <h3>-----1.8-----</h3>
+                        <h5>1.8.9</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.8.9-11.15.1.2318-1.8.9/forge-1.8.9-11.15.1.2318-1.8.9-installer.jar">forge官网v11.15.1.2318</a>
+                        <h5>1.8.8</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.8.8-11.15.0.1655/forge-1.8.8-11.15.0.1655-installer.jar">foge官网v11.15.0.1655</a>
+                        <h5>1.8</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.8-11.14.4.1577/forge-1.8-11.14.4.1577-installer.jar">forge官网v11.14.4.1577</a>
+                    <h3>-----1.7-----</h3>
+                        <h5>1.7.10</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10-10.13.4.1614-1.7.10/forge-1.7.10-10.13.4.1614-1.7.10-installer.jar">forge官方v10.13.4.16140</a>
+                        <h5>1.7.10_pre4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.10_pre4-10.12.2.1149-prerelease/forge-1.7.10_pre4-10.12.2.1149-prerelease-installer.jar">forge官方v10.12.2.1149</a>
+                        <h5>1.7.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.7.2-10.12.2.1161-mc172/forge-1.7.2-10.12.2.1161-mc172-installer.jar">forge官方v10.12.2.1161</a>
+                    <h3>-----1.6-----</h3>
+                        <h5>1.6.4</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.6.4-9.11.1.1345/forge-1.6.4-9.11.1.1345-installer.jar">forge官方v9.11.1.1345</a>
+                        <h5>1.6.3</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.6.3-9.11.0.878/forge-1.6.3-9.11.0.878-installer.jar">forge官方v9.11.0.878</a>
+                        <h5>1.6.2</h5>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.6.2-9.10.1.871/forge-1.6.2-9.10.1.871-installer.jar">forge官方v9.10.1.871</a>
+                        <h3>1.6.1</h3>
+                            <a href="https://maven.minecraftforge.net/net/minecraftforge/forge/1.6.1-8.9.0.775/forge-1.6.1-8.9.0.775-installer.jar">forhe官方v8.9.0.775</a>
+                    <h3>无法提供1.1至1.5版本minecraft forge</h3>
+                </div>
+            </div>
+        </div>    
+    </body>
+</html>

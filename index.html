@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>首页</title>
+    <link rel="shortcut icon" href="/file/favicon.ico">
+    <!--导航栏-->
+    <link rel="stylesheet" href="/Navigation_bar/Navigation_bar2/bootstrap.min.css">
+    <link rel="stylesheet" href="/Navigation_bar/Navigation_bar2/Navigation_bar2.css">
+    <script src="/Navigation_bar/Navigation_bar2/jquery.min.js"></script>
+    <script src="/Navigation_bar/Navigation_bar2/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f2f2f2; /* 默认白天背景色 */
+            color: #232323;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease;
+        }
+
+        .night-mode {
+            background-color: #232323; /* 黑夜背景色 */
+            color: #f2f2f2;
+            transition: background-color 0.5s ease;
+        }
+    </style>
+    <script>
+        function toggleNightMode() {
+            var body = document.body;
+            body.classList.toggle("night-mode");
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="father_box">
+        <div class="content_one">
+            <ul class="nav nav-pills nav-stacked" style=" overflow:scroll; height:100%; width:100%; margin: 0 auto; text-align:center">
+                <li class="active">
+                    <a>无法登录</a>
+                </li>
+                <li class="active">
+                    <a target="iframe_a" data-toggle="collapse" data-target=".1">主页选项</a>
+                    <ul class="nav nav-pills nav-stacked 1 collapse">
+                        <li><a href="/Home/pages/home.html" target="iframe_a">主页</a></li>
+                        <li><a href="/Home/pages/icp.html" target="iframe_a">icp备案</a></li>
+                        <li><a href="/Home/pages/download.html" target="iframe_a">下载</a></li>
+                        <li><a href="/Home/pages/search.html" target="iframe_a">搜索</a></li>
+                        <li><a href="/Home/pages/about.html" target="iframe_a">关于</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a data-toggle="collapse" data-target=".2">其他</a>
+                    <ul class="nav nav-pills nav-stacked 2 collapse">
+                        <li><a href="/mc/java/mcjava.html" target="iframe_a">java我的世界</a></li>
+                        <li><a onclick="openModal()">公告</a></li>
+                    </ul>
+                </li>
+                <li class="active">
+                    <a data-toggle="collapse" data-target=".3">设置</a>
+                    <ul class="nav nav-pills nav-stacked 3 collapse">
+                        <li><a onclick="toggleNightMode()">白天/黑夜</a></li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span> <!-- × 符号用于关闭弹窗 -->
+                <p>公告:更新了登录注册功能，功能已开放！</p>
+                <p>公告:更新了登录注册功能，功能已开放！</p>
+            </div>
+            <style>
+                
+                /* 弹窗背景样式 */
+                .modal {
+                    display: none; /* 默认隐藏 */
+                    position: fixed;
+                    z-index: 1;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow: auto;
+                    background-color: rgba(0, 0, 0, 0.4); /* 背景颜色带有透明度 */
+                }
+        
+                /* 弹窗内容框样式 */
+                .modal-content {
+                    background-color: #fefefe;
+                    margin: 15% auto; /* 居中显示 */
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 400px;
+                }
+        
+                /* 关闭按钮样式 */
+                .close {
+                    color: #aaa;
+                    float: right;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+        
+                /* 鼠标悬停在关闭按钮上时的样式 */
+                .close:hover,
+                .close:focus {
+                    color: black;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            </style>
+            <script>
+                // JavaScript 函数用于打开弹窗
+                function openModal() {
+                    document.getElementById("myModal").style.display = "block";
+                }
+        
+                // JavaScript 函数用于关闭弹窗
+                function closeModal() {
+                    document.getElementById("myModal").style.display = "none";
+                }
+            </script>
+        </div>
+        <div class="content_two">
+            <iframe src="/Home/pages/home.html" style=" overflow:scroll; height:100%; width:100%"  name="iframe_a" frameborder="0"></iframe>
+        </div>
+    </div>
+</body>
+
+</html>

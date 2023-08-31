@@ -1,0 +1,24 @@
+form .text {
+    display: inline-block;
+    border: 0;
+    width: 260px;
+    height: 35px;
+    font-size: 14px;
+    outline: none;
+    
+    border: 2px solid #0084ff;
+}
+
+form .search {
+    
+    width: 90px;
+    height: 38px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    /*   cursor: pointer;   鼠标悬停或点击时button时鼠标变成其他图标  */
+    text-align: center;
+    line-height: 40px;
+    background-color: #0084ff;
+    color: #FFFFFF;
+}
