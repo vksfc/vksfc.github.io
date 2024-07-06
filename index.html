@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-cn">
+  <head>
+  <meta charset="utf-8">
+  <title>正在重定向...</title>
+  </head>
+  <script>
+  window.onload=function(){
+        var div=document.getElementById("msg");
+        var time=5;
+        var timer=setInterval(function(){
+            if(time==0){
+                location.href="https://frp-few.top:60000";
+            }else{
+                div.innerHTML="将在 "+time+" 秒后重定向。";
+                time--; 
+            }
+        },3000)
+  }
+  </script>
+  <body>
+    <h1>正在重定向...</h1>
+    <div id="msg"></div>
+    <h3>目标页面：<a href="https://frp-few.top:60000">https://frp-few.top:60000</a></h3>
+  </body>
+</html>
